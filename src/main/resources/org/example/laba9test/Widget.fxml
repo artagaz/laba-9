@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.laba9test.Widget">
+    <GridPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="601.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Button fx:id="imgBtn" layoutX="225.0" layoutY="86.0" mnemonicParsing="false" style="-fx-background-image: url('file:arrow.png'); -fx-background-size: 140 140; -fx-background-repeat: no-repeat; -fx-background-position:center;" prefHeight="198" prefWidth="204" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <CheckBox fx:id="imgCheckBox" selected="true" mnemonicParsing="false" onAction="#imgCheckBox" prefHeight="60.0" prefWidth="209.0" text="image" />
+        <CheckBox fx:id="textCheckBox" selected="true" mnemonicParsing="false" onAction="#textCheckBox" prefHeight="62.0" prefWidth="200.0" text="text" GridPane.columnIndex="1" />
+        <CheckBox fx:id="btnCheckBox" selected="true" mnemonicParsing="false" onAction="#btnCheckBox" prefHeight="60.0" prefWidth="200.0" text="button" GridPane.columnIndex="2" />
+        <TextField fx:id="text" prefHeight="217.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="btn" mnemonicParsing="false" prefHeight="212.0" prefWidth="226.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    </GridPane>
+</AnchorPane>

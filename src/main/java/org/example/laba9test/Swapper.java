@@ -7,9 +7,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 import java.util.Objects;
@@ -18,7 +15,6 @@ public class Swapper extends Application {
     public TextField input1;
     public TextField input2;
     public Button btn;
-    boolean flag = false;
 
 
     public void swap(ActionEvent actionEvent) {
@@ -34,7 +30,7 @@ public class Swapper extends Application {
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Calculator");
+        stage.setTitle("Swapper");
 
         stage.show();
     }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.laba9test.Menu">
+    <GridPane minHeight="200.0" prefHeight="200.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="250.0" prefWidth="250.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="70.0" prefWidth="50.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" prefWidth="180.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+        </rowConstraints>
+        <Label alignment="CENTER" prefHeight="52.0" prefWidth="259.0" text="Окрошка 500Р"/>
+        <Label alignment="CENTER" prefHeight="84.0" prefWidth="321.0" text="Пельмени с говядиной 600Р"
+               GridPane.rowIndex="1"/>
+        <Label alignment="CENTER" prefHeight="113.0" prefWidth="335.0" text="Шаурма 250Р" GridPane.rowIndex="2"/>
+        <Label alignment="CENTER" prefHeight="121.0" prefWidth="393.0" text="Макароны по флотски 350Р"
+               GridPane.rowIndex="3"/>
+        <CheckBox fx:id="Okroshka" onAction="#Okroshka" mnemonicParsing="false" text="added" GridPane.columnIndex="1"/>
+        <CheckBox fx:id="Pelmeni" onAction="#Pelmneni"  mnemonicParsing="false" text="added" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <CheckBox fx:id="Shaurma" onAction="#Shaurma" mnemonicParsing="false" text="added" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <CheckBox fx:id="Makaroni" onAction="#Makaroni" mnemonicParsing="false" text="added" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <TextField fx:id="OkroshkaCount" prefHeight="87.0" prefWidth="180.0" text="Not added" GridPane.columnIndex="2"/>
+        <TextField fx:id="PelmeniCount" prefHeight="87.0" prefWidth="180.0" text="Not added" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <TextField fx:id="ShaurmaCount" prefHeight="87.0" prefWidth="180.0" text="Not Added" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <TextField fx:id="MakaroniCount" prefHeight="87.0" prefWidth="180.0" text="Not Added" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Button fx:id="OkroshkaPlus" onAction="#OkroshkaBtn" mnemonicParsing="false" prefHeight="79.0" prefWidth="60.0" visible="false" text="+" GridPane.columnIndex="3"/>
+        <Button fx:id="PelmeniPlus" onAction="#PelmeniBtn" mnemonicParsing="false" prefHeight="79.0" prefWidth="60.0" visible="false" text="+" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+        <Button fx:id="ShaurmaPlus" onAction="#ShaurmaBtn" mnemonicParsing="false" prefHeight="79.0" prefWidth="60.0" visible="false" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+        <Button fx:id="MakaroniPlus" onAction="#MakaroniBtn" mnemonicParsing="false" prefHeight="79.0" prefWidth="60.0" visible="false" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+        <Button fx:id="OkroshkaMinus" onAction="#OkroshkaBtn" mnemonicParsing="false" prefHeight="79.0" prefWidth="60.0" visible="false" text="-" GridPane.columnIndex="4"/>
+        <Button fx:id="PelmeniMinus" onAction="#PelmeniBtn" mnemonicParsing="false" prefHeight="79.0" prefWidth="60.0" visible="false" text="-" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+        <Button fx:id="ShaurmaMinus" onAction="#ShaurmaBtn" mnemonicParsing="false" prefHeight="79.0" prefWidth="60.0" visible="false" text="-" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+        <Button fx:id="MakaroniMinus" onAction="#MakaroniBtn" mnemonicParsing="false" prefHeight="79.0" prefWidth="60.0" visible="false" text="-" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+    </GridPane>
+    <TextArea fx:id="TotalArea" layoutY="238.0" maxHeight="300.0" maxWidth="550.0" minHeight="300.0" minWidth="550.0" prefHeight="300.0" prefWidth="550.0" text="Total:" AnchorPane.topAnchor="270.0">
+        <padding>
+          <Insets left="50.0"/>
+        </padding>
+    </TextArea>
+    <Button onAction="#TotalBtn" layoutX="17.0" layoutY="200.0" maxHeight="30.0" maxWidth="550.0" minHeight="30.0" minWidth="550.0"
+            mnemonicParsing="false" prefHeight="30.0" prefWidth="550.0" text="Total" AnchorPane.leftAnchor="25.0"
+            AnchorPane.topAnchor="220.0"/>
+</AnchorPane>
