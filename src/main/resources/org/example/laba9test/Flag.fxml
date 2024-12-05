@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="550.0" maxWidth="600.0" minHeight="550.0" minWidth="600.0" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.laba9test.Flag">
+    <GridPane prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label alignment="CENTER" prefHeight="109.0" prefWidth="210.0" text="1 полосочка">
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" prefHeight="109.0" prefWidth="210.0" text="2 полосочка" GridPane.columnIndex="1">
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" prefHeight="109.0" prefWidth="210.0" text="3 полосочка" GridPane.columnIndex="2">
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+        <RadioButton mnemonicParsing="false" prefHeight="101.0" prefWidth="209.0" text="синенький" GridPane.rowIndex="1">
+            <font>
+                <Font size="29.0" />
+            </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Strip1RadioButton" />
+         </toggleGroup>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="101.0" prefWidth="209.0" text="красненький" toggleGroup="$Strip1RadioButton" GridPane.rowIndex="2">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="164.0" prefWidth="247.0" text="зелёненький" toggleGroup="$Strip1RadioButton" GridPane.rowIndex="3">
+            <font>
+                <Font name="Calibri" size="26.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="164.0" prefWidth="247.0" text="фиолетовый" toggleGroup="$Strip1RadioButton" GridPane.rowIndex="4">
+            <font>
+                <Font name="Calibri" size="26.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="101.0" prefWidth="209.0" text="синенький" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+                <Font size="29.0" />
+            </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Strip2RadioButton" />
+         </toggleGroup>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="101.0" prefWidth="209.0" text="красненький" toggleGroup="$Strip2RadioButton" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="164.0" prefWidth="247.0" text="зелёненький" toggleGroup="$Strip2RadioButton" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <font>
+                <Font name="Calibri" size="26.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="129.0" prefWidth="200.0" text="фиолетовый" toggleGroup="$Strip2RadioButton" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <font>
+                <Font name="Calibri" size="26.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="101.0" prefWidth="209.0" text="синенький" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <font>
+                <Font size="29.0" />
+            </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Strip3RadioButton" />
+         </toggleGroup>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="101.0" prefWidth="209.0" text="красненький" toggleGroup="$Strip3RadioButton" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="164.0" prefWidth="247.0" text="зелёненький" toggleGroup="$Strip3RadioButton" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <font>
+                <Font name="Calibri" size="26.0" />
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" prefHeight="164.0" prefWidth="247.0" text="фиолетовый" toggleGroup="$Strip3RadioButton" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <font>
+                <Font name="Calibri" size="26.0" />
+            </font>
+        </RadioButton>
+    </GridPane>
+    <Rectangle fx:id="Strip1" arcHeight="5.0" arcWidth="5.0" fill="#1c00ff" height="500.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="200.0" />
+    <Rectangle fx:id="Strip2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="500.0" layoutX="200.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="200.0" />
+    <Rectangle fx:id="Strip3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="500.0" layoutX="400.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="200.0" />
+   <Button layoutY="500.0" maxHeight="50.0" maxWidth="600.0" minHeight="50.0" minWidth="600.0" mnemonicParsing="false" onAction="#Draw" prefHeight="50.0" prefWidth="600.0" text="Button" />
+</AnchorPane>
